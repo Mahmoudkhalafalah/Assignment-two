@@ -1,86 +1,14 @@
 <div class="dark:bg-gray-950 overflow-auto">
   <div class="container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto my-3 gap-7 py-10">
-  <div class="card bg-white rounded-lg shadow-md max-h-74">
-    <div class="card-img">
-      <img src="/5.jpg" alt="Card Image" class="rounded-t-lg w-full block h-48 object-cover">
-    </div>
-    <div class="card-content p-5">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Card 2</h5>
-      <p class="mb-3 font-normal text-gray-700">This is the second card</p>
-    </div>
+    @for(src of imagesSources; track $index){
+      <div class="card bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+        <img [src]="src" alt="Image {{ $index + 1 }}" class="w-full h-48 object-cover rounded-t-lg">
+        <div class="p-4">
+          <h2 class="text-xl font-bold dark:text-white">Image {{ $index + 1 }}</h2>
+          <p class="text-gray-700 dark:text-gray-300">This is a description for image {{ $index + 1 }}.</p>
+        </div>
+      </div>
+    }
   </div>
-  <div class="card bg-white rounded-lg shadow-md max-h-74">
-    <div class="card-img">
-      <img src="/23.jpg" alt="Card Image" class="rounded-t-lg w-full block h-48 object-cover">
-    </div>
-    <div class="card-content p-5">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Card 2</h5>
-      <p class="mb-3 font-normal text-gray-700">This is the second card</p>
-    </div>
-  </div>
-  <div class="card bg-white rounded-lg shadow-md max-h-74">
-    <div class="card-img">
-      <img src="/6.jpg" alt="Card Image" class="rounded-t-lg w-full block h-48 object-cover">
-    </div>
-    <div class="card-content p-5">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Card 2</h5>
-      <p class="mb-3 font-normal text-gray-700">This is the second card</p>
-    </div>
-  </div>
-  <div class="card bg-white rounded-lg shadow-md max-h-74">
-    <div class="card-img">
-      <img src="/ales-nesetril-Im7lZjxeLhg-unsplash.jpg" alt="Card Image" class="rounded-t-lg w-full block h-48 object-cover">
-    </div>
-    <div class="card-content p-5">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Card 2</h5>
-      <p class="mb-3 font-normal text-gray-700">This is the second card</p>
-    </div>
-  </div>
-  <div class="card bg-white rounded-lg shadow-md max-h-74">
-    <div class="card-img">
-      <img src="/bg2.jpg" alt="Card Image" class="rounded-t-lg w-full block h-48 object-cover">
-    </div>
-    <div class="card-content p-5">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Card 2</h5>
-      <p class="mb-3 font-normal text-gray-700">This is the second card</p>
-    </div>
-  </div>
-  <div class="card bg-white rounded-lg shadow-md max-h-74">
-    <div class="card-img">
-      <img src="/bg6.jpg" alt="Card Image" class="rounded-t-lg w-full block h-48 object-cover">
-    </div>
-    <div class="card-content p-5">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Card 2</h5>
-      <p class="mb-3 font-normal text-gray-700">This is the second card</p>
-    </div>
-  </div>
-  <div class="card bg-white rounded-lg shadow-md max-h-74">
-    <div class="card-img">
-      <img src="/full-screen-smartphone-mockup-design_53876-65968.webp" alt="Card Image" class="rounded-t-lg w-full block h-48 object-cover">
-    </div>
-    <div class="card-content p-5">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Card 2</h5>
-      <p class="mb-3 font-normal text-gray-700">This is the second card</p>
-    </div>
-  </div>
-  <div class="card bg-white rounded-lg shadow-md max-h-74">
-    <div class="card-img">
-      <img src="/phone-mockup-brown-background-vector_53876-164914.jpg" alt="Card Image" class="rounded-t-lg w-full block h-48 object-cover">
-    </div>
-    <div class="card-content p-5">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Card 2</h5>
-      <p class="mb-3 font-normal text-gray-700">This is the second card</p>
-    </div>
-  </div>
-  <div class="card bg-white rounded-lg shadow-md max-h-74">
-    <div class="card-img">
-      <img src="/smartphone-mockup_1310-812.webp" alt="Card Image" class="rounded-t-lg w-full block h-48 object-cover">
-    </div>
-    <div class="card-content p-5">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Card 2</h5>
-      <p class="mb-3 font-normal text-gray-700">This is the second card</p>
-    </div>
-  </div>
-</div>
 
 </div>

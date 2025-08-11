@@ -16,12 +16,7 @@ import { faWrench } from '@fortawesome/free-solid-svg-icons'
 })
 export class Home implements OnInit {
   protected readonly title = 'Welcome to the Home Page';
-  faAnchorCircleExclamation = faAnchorCircleExclamation;
-  faHSquare = faHSquare;
-  faJarWheat = faJarWheat;
-  faLadderWater = faLadderWater;
-  faIcicles = faIcicles;
-  faWrench = faWrench;
+  icons = [faAnchorCircleExclamation, faHSquare, faJarWheat, faLadderWater, faIcicles, faWrench];
   ngOnInit() {
     initFlowbite();
   }

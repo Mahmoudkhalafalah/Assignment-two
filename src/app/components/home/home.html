@@ -8,8 +8,8 @@
     </div>
     <!-- Item 2 -->
     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-      <img src="/bg2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
-        alt="...">
+      <img src="/5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
+        alt="">
     </div>
     <!-- Item 3 -->
     <div class="hidden duration-700 ease-in-out" data-carousel-item>
@@ -19,7 +19,7 @@
     <!-- Item 4 -->
     <div class="hidden duration-700 ease-in-out" data-carousel-item>
       <img src="/testtwo.jpg"
-        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover" alt="...">
+        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover" alt="">
     </div>
   </div>
 
@@ -56,62 +56,17 @@
       <p class="text-center dark:text-white">Lorem ipsum dolor sit amet consectetur !</p>
     </div>
     <div class="cards-container my-10 grid grid-cols-1 md:grid-cols-3 gap-y-2">
-      <div class="card pb-10 border-[1px] border-black rounded-lg flex flex-col items-center bg-white">
-        <fa-icon [icon]="faAnchorCircleExclamation"
-          class="size-12 rounded-full flex justify-center items-center bg-orange-200 -translate-y-1/2"></fa-icon>
+      @for(icon of icons; track $index){
+        <div class="card pb-10 border-[1px] border-black rounded-lg flex flex-col items-center bg-white dark:bg-gray-800">
+        <fa-icon [icon]="icon"
+          class="dark:text-white dark:bg-blue-950 size-12 rounded-full flex justify-center items-center bg-orange-200 -translate-y-1/2"></fa-icon>
         <h2
-          class="text-2xl mb-3 relative after:content-[''] after:h-0.5 after:top-full after:left-1/4 after:absolute after:w-10 after:bg-black">
+          class="text-2xl mb-3 relative after:content-[''] after:h-0.5 after:top-full after:left-1/4 after:absolute after:w-10 after:bg-black dark:text-white">
           Product</h2>
-        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing.
+        <p class="text-center dark:text-white">Lorem ipsum dolor sit amet, consectetur adipisicing.
         </p>
       </div>
-      <div class="card pb-10 border-[1px] border-black rounded-lg flex flex-col items-center bg-white">
-        <fa-icon [icon]="faHSquare"
-          class="size-12 rounded-full flex justify-center items-center bg-orange-200 -translate-y-1/2"></fa-icon>
-        <h2
-          class="text-2xl mb-3 relative after:content-[''] after:h-0.5 after:top-full after:left-1/4 after:absolute after:w-10 after:bg-black">
-          Product</h2>
-        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing.
-        </p>
-      </div>
-      <div class="card pb-10 border-[1px] border-black rounded-lg flex flex-col items-center bg-white">
-        <fa-icon [icon]="faWrench"
-          class="size-12 rounded-full flex justify-center items-center bg-orange-200 -translate-y-1/2"></fa-icon>
-        <h2
-          class="text-2xl mb-3 relative after:content-[''] after:h-0.5 after:top-full after:left-1/4 after:absolute after:w-10 after:bg-black">
-          Product</h2>
-        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing.
-        </p>
-      </div>
-      <div class="card pb-10 border-[1px] border-black rounded-lg flex flex-col items-center bg-white">
-        <fa-icon [icon]="faJarWheat"
-          class="size-12 rounded-full flex justify-center items-center bg-orange-200 -translate-y-1/2"></fa-icon>
-        <h2
-          class="text-2xl mb-3 relative after:content-[''] after:h-0.5 after:top-full after:left-1/4 after:absolute after:w-10 after:bg-black">
-          Product</h2>
-        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing.
-        </p>
-      </div>
-      <div class="card pb-10 border-[1px] border-black rounded-lg flex flex-col items-center bg-white">
-        <fa-icon [icon]="faLadderWater"
-          class="size-12 rounded-full flex justify-center items-center bg-orange-200 -translate-y-1/2"></fa-icon>
-        <h2
-          class="text-2xl mb-3 relative after:content-[''] after:h-0.5 after:top-full after:left-1/4 after:absolute after:w-10 after:bg-black">
-          Product</h2>
-        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing.
-        </p>
-      </div>
-      <div class="card pb-10 border-[1px] border-black rounded-lg flex flex-col items-center bg-white">
-        <fa-icon [icon]="faIcicles"
-          class="size-12 rounded-full flex justify-center items-center bg-orange-200 -translate-y-1/2"></fa-icon>
-        <h2
-          class="text-2xl mb-3 relative after:content-[''] after:h-0.5 after:top-full after:left-1/4 after:absolute after:w-10 after:bg-black">
-          Product</h2>
-        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing.
-        </p>
-      </div>
+      }
     </div>
-
-
   </div>
 </div>
