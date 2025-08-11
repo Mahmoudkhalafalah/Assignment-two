@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+body {
+  background-color: #f1f1f1; /* Tailwind's bg-gray-100 */
+}
